@@ -1,0 +1,3 @@
+include etcpack/source/*.h
+include etcpack/source/*.cxx
+include *.h *.pyx *.cpp *.pxd

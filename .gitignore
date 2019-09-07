@@ -1,0 +1,8 @@
+.git/*
+.idea/*
+build/*
+dist/*
+etcpack.c
+etcpack.egg-info
+etcpack.cp37-win32.pyd
+etcpack.cpp
