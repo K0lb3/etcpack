@@ -27,13 +27,13 @@ img = Image.frombytes(mode, size, raw_etc_image_data, 'etc2', args)
 | ETC2PACKAGE_RGBA_NO_MIPMAPS | 3 | RGBA |
 | ETC2PACKAGE_RGBA1_NO_MIPMAPS | 4 | RGBA |
 | ETC2PACKAGE_R_NO_MIPMAPS | 5 | R or A |
-| ETC2PACKAGE_RG_NO_MIPMAPS | 6 | ?RGB565? | 
-| ETC2PACKAGE_R_SIGNED_NO_MIPMAPS | 7 |  |
-| ETC2PACKAGE_RG_SIGNED_NO_MIPMAPS | 8 |  |
+| ETC2PACKAGE_RG_NO_MIPMAPS | 6 | RGA | 
+| ETC2PACKAGE_R_SIGNED_NO_MIPMAPS | 7 | R or A |
+| ETC2PACKAGE_RG_SIGNED_NO_MIPMAPS | 8 | RGA |
 | ETC2PACKAGE_sRGB_NO_MIPMAPS | 9 | RGB |
 | ETC2PACKAGE_sRGBA_NO_MIPMAPS | 10 | RGBA | 
 | ETC2PACKAGE_sRGBA1_NO_MIPMAPS | 11 | RGBA  |
 
 ## notes
-* compression isn't integrated yet
-* file loading isn't integrated yet
+* compression isn't implemented
+* RG is untested
