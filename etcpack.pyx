@@ -227,4 +227,5 @@ class ETC2Decoder(ImageFile.PyDecoder):
 			return bimg
 
 
-Image.register_decoder('etc2', ETC2Decoder)
+if 'etc2' not in Image.DECODERS:
+	Image.register_decoder('etc2', ETC2Decoder)
