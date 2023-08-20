@@ -1,10 +1,7 @@
 import os
 from setuptools import Extension, setup
 
-try:
-    from Cython.Build import cythonize
-except ImportError:
-    cythonize = None
+from Cython.Build import cythonize
 
 
 def ALL_C(folder, exclude=[]):
@@ -28,7 +25,6 @@ extensions = [
         ],
     )
 ]
-if cythonize:
-    extensions = cythonize(extensions)
+extensions = cythonize(extensions)
 
 setup(ext_modules=extensions)
